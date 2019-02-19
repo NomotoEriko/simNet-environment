@@ -7,6 +7,6 @@ ENV PYTHONPATH /workspace/
 RUN pip install Cython
 RUN pip install nltk matplotlib scikit-image
 COPY setup.py /
-RUN python /docker_setup.py
+RUN python /setup.py
 RUN chmod -R 777 /workspace/
 # RUN apt-get update && apt-get install -y vim
